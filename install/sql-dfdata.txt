@@ -510,22 +510,15 @@ INSERT INTO `#@__channeltype` VALUES('1','article','普通文章','#@__archives'
 ('6','shop','商品','#@__archives','#@__addonshop','archives_add.php','content_list.php','archives_edit.php','archives_add.php','content_list.php','archives_edit.php','<field:body itemname="详细介绍" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="" page="split">\t\n</field:body>\t\n<field:price itemname="市场价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">\t\n</field:price>\t\n<field:trueprice itemname="优惠价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">\t\n</field:trueprice>\t\n<field:brand itemname="品牌" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">\t\n</field:brand>\t\n<field:units itemname="计量单位" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">\t\n</field:units>\t\n\n\t\n\n<field:vocation itemname="行业" autofield="1" notsend="0" type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">\t\n</field:vocation>\t\n\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">\t\n</field:infotype>\t\n\n<field:uptime itemname="上架时间" autofield="1" notsend="0" type="datetime" isnull="true" islist="0" default=""  maxlength="250" page="">\t\n</field:uptime>\t\n','price,trueprice,brand,units','','0','1','1','-1','','10','0','1','1','商品名称','0','0'),
 ('-8','infos','分类信息','#@__archives','#@__addoninfos','archives_sg_add.php','content_sg_list.php','archives_sg_edit.php','archives_sg_add.php','content_sg_list.php','archives_sg_edit.php','<field:channel itemname="频道id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:channel>\t\n<field:arcrank itemname="浏览权限" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="5" page=""></field:arcrank>\t\n<field:mid itemname="会员id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:mid>\t\n<field:click itemname="点击" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:click>\t\n<field:title itemname="标题" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:title>\t\n<field:senddate itemname="发布时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:senddate>\t\n<field:flag itemname="推荐属性" autofield="0" notsend="0" type="checkbox" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:flag>\t\n<field:litpic itemname="缩略图" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:litpic>\t\n<field:userip itemname="会员IP" autofield="0" notsend="0" type="text" isnull="true" islist="0" default="0"  maxlength="15" page=""></field:userip>\t\n<field:lastpost itemname="最后评论时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:lastpost>\t\n<field:scores itemname="评论积分" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:scores>\t\n<field:goodpost itemname="好评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:goodpost>\t\n<field:badpost itemname="差评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:badpost>\t\n<field:nativeplace itemname="地区" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">\t\n</field:nativeplace>\t\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">\t\n</field:infotype>\t\n<field:body itemname="信息内容" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="250" page="">\t\n</field:body>\t\n<field:endtime itemname="截止日期" autofield="1" notsend="0" type="datetime" isnull="true" islist="1" default=""  maxlength="250" page="">\t\n</field:endtime>\t\n<field:linkman itemname="联系人" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">\t\n</field:linkman>\t\n<field:tel itemname="联系电话" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="50" page="">\t\n</field:tel>\t\n<field:email itemname="电子邮箱" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">\t\n</field:email>\t\n<field:address itemname="地址" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="100" page="">\t\n</field:address>\t\n','channel,arcrank,mid,click,title,senddate,flag,litpic,lastpost,scores,goodpost,badpost,nativeplace,infotype,endtime','','-1','1','1','-1','','0','0','0','1','信息标题','0','0');
 
-INSERT INTO `#@__co_onepage` VALUES('5','www.dedecms.com','织梦网络','1','gb2312','<div class="content">{@body}<div class="cupage">'),
+INSERT INTO `#@__co_onepage` VALUES('5','www.daqid.com','网络','1','gb2312','<div class="content">{@body}<div class="cupage">'),
 ('4','www.techweb.com.cn','Techweb','1','gb2312','<div class="content_txt">{@body}</div>\t\n'),
-('6','tw.news.yahoo.com','台湾雅虎','1','big5','<div id="ynwsartcontent">{@body}</div>\t\n');
+('6','tw.news.yahoo.com','台湾','1','big5','<div id="ynwsartcontent">{@body}</div>\t\n');
 
-INSERT INTO `#@__flink` VALUES('2','1','http://www.dedecms.com','织梦CMS官方','','','','1226375403','1','2'),
-('9','1','http://docs.dedecms.com/','DedeCMS维基手册','','','','1227772717','1','2'),
-('8','1','http://bbs.dedecms.com','织梦技术论坛','','','','1227772703','1','2');
+INSERT INTO `#@__flink` VALUES('2','1','http://www.daqid.com','大旗德讯','','','','1226375403','1','2');
 
-INSERT INTO `#@__flinktype` VALUES('1','综合网站'),
-('2','娱乐类'),
-('3','教育类'),
-('4','计算机类'),
-('5','电子商务'),
-('6','网上信息'),
-('7','论坛类'),
-('8','其它类型');
+INSERT INTO `#@__flinktype` VALUES('1','综合站'),
+('2','娱乐'),
+('3','其它');
 
 INSERT INTO `#@__freelist` VALUES('1','测试内容','{listdir}/index_{listid}_{page}.html','{cmspath}/freelist/','index.html','1','{style}/list_free.htm','1289712633','100','0','{dede:list  pagesize="30" col="1" titlelen="60" orderby="pubdate" orderway="desc"  typeid="1"  channel="1" }<li>[field:imglink/] [field:textlink/] <span class=info><small>日期：</small>[field:pubdate function="getdatemk(@me)"/] <small>点击：</small>[field:click/] <small>好评：</small>[field:scores/] </span>\t\n<p class=intro>[field:description/]...</p></li>{/dede:list}','阿三大厦大大','阿三大厦大厦大撒'),
 ('10','Google SiteMap 生成器','{listdir}googlemap_{page}.xml','{cmspath}','index.html','1','{style}/googlemap.htm','1226884666','100','0','{dede:list  pagesize="500" col="1" titlelen="60" orderby="pubdate" orderway="desc" \t\n channel="1"  keyword="" }<url>\t\n   <loc>[field:arcurl function="Gmapurl(@me)"/]</loc> \t\n   <title>[field:title function="HtmlReplace(@me)"/]</title>\t\n   <news:news>\t\n  <news:keywords>[field:keywords/]</news:keywords>\t\n <news:publication_date>[field:senddate function="strftime("%Y-%m-%d",@me)"/]</news:publication_date>\t\n </news:news>\t\n</url>{/dede:list}','','');
@@ -596,26 +589,26 @@ INSERT INTO `#@__member_group` VALUES('1','朋友','0');
 
 INSERT INTO `#@__vote` VALUES('1','你是从哪儿得知本站的？','1266336000','1584547200','0','0','1','1','0','0','<v:note id="1" count="1">朋友介绍</v:note>rn<v:note id="2" count="0">门户网站的搜索引擎</v:note>rn<v:note id="3" count="2">Google或百度搜索</v:note>rn<v:note id="4" count="2">别的网站上的链接</v:note>rn<v:note id="5" count="1">其它途径</v:note>rn');
 
-INSERT INTO `#@__myad` VALUES('1','0','0','indexTopBanner1','首页顶部导航大图-500*60','0','1297933028','1300525028','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=fronttopbanner&charset=gbk"></script>',''),
-('2','0','0','indexTopBanner2','首页顶部导航小图-200*60','0','1297933605','1300525605','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=fronttopbanner2&charset=gbk"></script>',''),
-('3','0','0','innerTopBanner1','(频道/列表)顶部导航大图-500*60','0','1297934052','1300526052','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innertopbanner1&charset=gbk"></script>',''),
-('4','0','0','innerTopBanner2','(频道/列表)顶部导航小图-200*60','0','1297934104','1300526104','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innertopbanner2&charset=gbk"></script>',''),
-('5','0','0','indexLeftBanner','首页左侧大图广告-712*75','0','1297934791','1300526791','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=indexleftbanner&charset=gbk"></script>',''),
-('6','0','0','indexRightLitpic1','首页右侧小块图1-240*65','0','1297936106','1300528106','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=indexrtlitpic1&charset=gbk"></script>',''),
-('7','0','0','indexRightLitpic2','首页右侧小块图2-240*65','0','1297936768','1300528768','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=indexrtlitpic2&charset=gbk"></script>',''),
-('8','0','0','indexfooterAD','首页底部图片广告-726*91','0','1297937814','1300529814','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=indexfooterad&charset=gbk"></script>',''),
-('9','0','0','innerfooterAD','(频道/列表)底部图片广告-726*91','0','1297991183','1300583183','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad&charset=gbk"></script>',''),
-('10','0','0','innerfooterAD2','内容底部图片广告-726*91','0','1297991709','1300583709','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad2&charset=gbk"></script>',''),
-('11','0','0','listRtPicAD','(频道/列表)右侧图片广告-240*200','0','1297992254','1300584254','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=listrtpicad&charset=gbk"></script>',''),
-('12','0','0','contentRtPicAD','内容右侧图片广告-240*200','0','1297995082','1300587082','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad&charset=gbk"></script>',''),
-('13','0','0','listRtPicAD2','(频道/列表)右侧图片广告2-240*200','0','1297996543','1300588543','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=listrtpicad2&charset=gbk"></script>',''),
-('14','0','0','contentRtPicAD2','内容右侧图片广告2-240*200','0','1297997106','1300589106','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad2&charset=gbk"></script>',''),
-('15','0','0','contentMidPicAD','内容页内容中广告-300*250','0','1297997971','1300589971','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentmidpicad&charset=gbk"></script>',''),
-('16','0','0','searchPicAD','搜索页右侧广告-300*268','0','1297999720','1300591720','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=searchpicad&charset=gbk"></script>',''),
-('17','0','0','indexRtpicAd3','首页右侧图片广告-240*200','0','1298000077','1300592077','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=indexrtpicad3&charset=gbk"></script>',''),
-('18','0','0','searchTopBanner','搜索页面顶部banner广告-300*40','0','1298012954','1300604954','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=searchtopbanner&charset=gbk"></script>',''),
-('19','0','0','contentTopBanner1','内容顶部导航大图-500*60','0','1298017655','1300609655','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner1&charset=gbk"></script>',''),
-('20','0','0','contentTopBanner2','内容顶部导航小图-200*60','0','1298017688','1300609688','<script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner2&charset=gbk"></script>','');
+INSERT INTO `#@__myad` VALUES('1','0','0','indexTopBanner1','首页顶部导航大图-500*60','0','1297933028','1300525028',' ',''),
+('2','0','0','indexTopBanner2','首页顶部导航小图-200*60','0','1297933605','1300525605',' ',''),
+('3','0','0','innerTopBanner1','(频道/列表)顶部导航大图-500*60','0','1297934052','1300526052',' ',''),
+('4','0','0','innerTopBanner2','(频道/列表)顶部导航小图-200*60','0','1297934104','1300526104',' ',''),
+('5','0','0','indexLeftBanner','首页左侧大图广告-712*75','0','1297934791','1300526791',' ',''),
+('6','0','0','indexRightLitpic1','首页右侧小块图1-240*65','0','1297936106','1300528106',' ',''),
+('7','0','0','indexRightLitpic2','首页右侧小块图2-240*65','0','1297936768','1300528768',' ',''),
+('8','0','0','indexfooterAD','首页底部图片广告-726*91','0','1297937814','1300529814',' ',''),
+('9','0','0','innerfooterAD','(频道/列表)底部图片广告-726*91','0','1297991183','1300583183',' ',''),
+('10','0','0','innerfooterAD2','内容底部图片广告-726*91','0','1297991709','1300583709',' ',''),
+('11','0','0','listRtPicAD','(频道/列表)右侧图片广告-240*200','0','1297992254','1300584254',' ',''),
+('12','0','0','contentRtPicAD','内容右侧图片广告-240*200','0','1297995082','1300587082',' ',''),
+('13','0','0','listRtPicAD2','(频道/列表)右侧图片广告2-240*200','0','1297996543','1300588543',' ',''),
+('14','0','0','contentRtPicAD2','内容右侧图片广告2-240*200','0','1297997106','1300589106',' ',''),
+('15','0','0','contentMidPicAD','内容页内容中广告-300*250','0','1297997971','1300589971',' ',''),
+('16','0','0','searchPicAD','搜索页右侧广告-300*268','0','1297999720','1300591720',' ',''),
+('17','0','0','indexRtpicAd3','首页右侧图片广告-240*200','0','1298000077','1300592077',' ',''),
+('18','0','0','searchTopBanner','搜索页面顶部banner广告-300*40','0','1298012954','1300604954',' ',''),
+('19','0','0','contentTopBanner1','内容顶部导航大图-500*60','0','1298017655','1300609655',' ',''),
+('20','0','0','contentTopBanner2','内容顶部导航小图-200*60','0','1298017688','1300609688',' ','');
 
 INSERT INTO `#@__sys_enum` VALUES('139','cms制作','503','vocation','503','0'),
 ('39','租房','1','house','0','1'),
@@ -3972,7 +3965,7 @@ INSERT INTO `#@__sysconfig` VALUES('1','cfg_basehost','站点根网址','1','str
 ('5','cfg_backup_dir','数据备份目录（在data目录内）','2','string','backupdata'),
 ('6','cfg_indexname','主页链接名','1','string','主页'),
 ('7','cfg_webname','网站名称','1','string','我的网站'),
-('8','cfg_adminemail','网站发信EMAIL','2','string','admin@dedecms.com'),
+('8','cfg_adminemail','网站发信EMAIL','2','string','admin@daqid.com'),
 ('9','cfg_html_editor','Html编辑器（ckeditor,需要fck的用户可以去官网下载）','2','string','ckeditor'),
 ('10','cfg_arcdir','文档HTML默认保存路径','1','string','/a'),
 ('11','cfg_medias_dir','图片/上传文件默认路径','1','string','/uploads'),
@@ -4111,7 +4104,7 @@ INSERT INTO `#@__sysconfig` VALUES('1','cfg_basehost','站点根网址','1','str
 ('753','cfg_sphinx_article','是否启用文章全文检索功能（需配置sphinx服务器）','7','bool','N'),
 ('754','cfg_sphinx_host','Sphinx服务器主机地址','7','string','localhost'),
 ('755','cfg_sphinx_port','Sphinx服务器端口号','7','number','9312'),
-(14, 'cfg_domain_cookie', '跨域共享cookie的域名(例如: .dedecms.com)', 2, 'string', ''),
+(14, 'cfg_domain_cookie', '跨域共享cookie的域名(例如: .daqid.com)', 2, 'string', ''),
 ('756','cfg_memcache_enable','是否启用memcache缓存，如果为否(N)，默认使用文件缓存',6,'bool','N'),
 ('757','cfg_memcache_mc_defa','默认memcache缓存服务器地址',6,'string','memcache://127.0.0.1:11211/default127'),
 ('758','cfg_memcache_mc_oth','附加memcache缓存服务器地址',6,'string',''),
