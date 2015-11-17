@@ -49,7 +49,7 @@ class ListView
      *
      * @access    public
      * @param     int  $typeid  栏目ID
-     * @param     int  $uppage  上一页
+     * @param     int  $uppage  <
      * @return    string
      */
     function __construct($typeid, $uppage=1)
@@ -969,26 +969,26 @@ class ListView
         $tnamerule = $this->GetMakeFileRule($this->Fields['id'],"list",$this->Fields['typedir'],$this->Fields['defaultname'],$this->Fields['namerule2']);
         $tnamerule = preg_replace("/^(.*)\//", '', $tnamerule);
 
-        //获得上一页和主页的链接
+        //获得<和主页的链接
         if($this->PageNo != 1)
         {
-            $prepage.="<li><a href='".str_replace("{page}",$prepagenum,$tnamerule)."'>上一页</a></li>\r\n";
-            $indexpage="<li><a href='".str_replace("{page}",1,$tnamerule)."'>首页</a></li>\r\n";
+            $prepage.="<li><a href='".str_replace("{page}",$prepagenum,$tnamerule)."'><</a></li>\r\n";
+            $indexpage="<li><a href='".str_replace("{page}",1,$tnamerule)."'><<</a></li>\r\n";
         }
         else
         {
-            $indexpage="<li>首页</li>\r\n";
+            $indexpage="<li><<</li>\r\n";
         }
 
-        //下一页,未页的链接
+        //>,未页的链接
         if($this->PageNo!=$totalpage && $totalpage>1)
         {
-            $nextpage.="<li><a href='".str_replace("{page}",$nextpagenum,$tnamerule)."'>下一页</a></li>\r\n";
-            $endpage="<li><a href='".str_replace("{page}",$totalpage,$tnamerule)."'>末页</a></li>\r\n";
+            $nextpage.="<li><a href='".str_replace("{page}",$nextpagenum,$tnamerule)."'>></a></li>\r\n";
+            $endpage="<li><a href='".str_replace("{page}",$totalpage,$tnamerule)."'>>></a></li>\r\n";
         }
         else
         {
-            $endpage="<li>末页</li>\r\n";
+            $endpage="<li>>></li>\r\n";
         }
 
         //option链接
@@ -1100,24 +1100,24 @@ class ListView
         //$hidenform = "<input type='hidden' name='tid' value='".$this->TypeID."'>\r\n";
         //$hidenform .= "<input type='hidden' name='TotalResult' value='".$this->TotalResult."'>\r\n";
 
-        //获得上一页和下一页的链接
+        //获得<和>的链接
         if($this->PageNo != 1)
         {
-            $prepage.="<li><a href='".$purl."PageNo=$prepagenum'>上一页</a></li>\r\n";
-            $indexpage="<li><a href='".$purl."PageNo=1'>首页</a></li>\r\n";
+            $prepage.="<li><a href='".$purl."PageNo=$prepagenum'><</a></li>\r\n";
+            $indexpage="<li><a href='".$purl."PageNo=1'><<</a></li>\r\n";
         }
         else
         {
-            $indexpage="<li><a>首页</a></li>\r\n";
+            $indexpage="<li><a><<</a></li>\r\n";
         }
         if($this->PageNo!=$totalpage && $totalpage>1)
         {
-            $nextpage.="<li><a href='".$purl."PageNo=$nextpagenum'>下一页</a></li>\r\n";
-            $endpage="<li><a href='".$purl."PageNo=$totalpage'>末页</a></li>\r\n";
+            $nextpage.="<li><a href='".$purl."PageNo=$nextpagenum'>></a></li>\r\n";
+            $endpage="<li><a href='".$purl."PageNo=$totalpage'>>></a></li>\r\n";
         }
         else
         {
-            $endpage="<li><a>末页</a></li>\r\n";
+            $endpage="<li><a>>></a></li>\r\n";
         }
 
 
