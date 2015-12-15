@@ -171,8 +171,8 @@ function lib_arclistDone(&$refObj, &$ctag, $typeid=0, $row=10, $col=1, $titlelen
 {
     global $dsql,$PubFields,$cfg_keyword_like,$cfg_index_cache,$_arclistEnv,$envs,$cfg_cache_type,$cfg_digg_update;
     $row = AttDef($row,10);
-    $titlelen = AttDef($titlelen,30);
-    $infolen = AttDef($infolen,160);
+    $titlelen = AttDef($titlelen,200);
+    $infolen = AttDef($infolen,500);
     $imgwidth = AttDef($imgwidth,120);
     $imgheight = AttDef($imgheight,120);
     $listtype = AttDef($listtype,'all');
@@ -328,6 +328,7 @@ function lib_arclistDone(&$refObj, &$ctag, $typeid=0, $row=10, $col=1, $titlelen
     $ordersql = '';
     if($orderby=='hot' || $orderby=='click') $ordersql = " ORDER BY arc.click $orderWay";
     else if($orderby == 'sortrank' || $orderby=='pubdate') $ordersql = " ORDER BY arc.sortrank $orderWay";
+    else if($orderby == 'weight') $ordersql = " ORDER BY arc.weight $orderWay";
     else if($orderby == 'id') $ordersql = "  ORDER BY arc.id $orderWay";
     else if($orderby == 'near') $ordersql = " ORDER BY ABS(arc.id - ".$arcid.")";
     else if($orderby == 'lastpost') $ordersql = "  ORDER BY arc.lastpost $orderWay";
@@ -372,7 +373,6 @@ function lib_arclistDone(&$refObj, &$ctag, $typeid=0, $row=10, $col=1, $titlelen
             $addfieldsSqlJoin = " LEFT JOIN `$addtable` addf ON addf.aid = arc.id ";
         }
     }
-
     $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
         tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
         $addfieldsSql
