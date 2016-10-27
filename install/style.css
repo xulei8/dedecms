@@ -165,7 +165,7 @@ input,button,select{
 }
 
 .install-msg{
-	padding:10px 20px;
+	padding:60px 20px;
 	color:#777;
 	line-height:31px;
 	font-size:14px;
@@ -173,10 +173,18 @@ input,button,select{
 	clear:both;
 
 }
-
+.install-msg .intall-ok{
+	display: block;
+	clear: both;
+}
+.install-msg .intall-ok a{
+	text-decoration: none;
+	color: #690;
+	margin-right: 20px;
+}
 
 .pr-agreement{
-	padding:16px;
+	padding:60px 0px;
 	line-height:21px;
 	color:#666;
 	height:300px;
