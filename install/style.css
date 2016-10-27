@@ -173,7 +173,15 @@ input,button,select{
 	clear:both;
 
 }
-
+.install-msg .intall-ok{
+	display: block;
+	clear: both;
+}
+.install-msg .intall-ok a{
+	text-decoration: none;
+	color: #690;
+	margin-right: 20px;
+}
 
 .pr-agreement{
 	padding:16px;
