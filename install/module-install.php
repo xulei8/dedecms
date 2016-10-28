@@ -14,7 +14,7 @@ $errmsg = '';
 $insLockfile = dirname(__FILE__).'/install_lock.txt';
 $moduleCacheFile = dirname(__FILE__).'/modules.tmp.inc';
 $moduleDir = DEDEROOT.'/data/module';
-$AdminBaseDir = DEDEROOT.'/dede/';
+$AdminBaseDir = DEDEROOT.'/dadmin/';
 
 if(file_exists($insLockfile))
 {
