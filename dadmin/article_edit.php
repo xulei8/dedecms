@@ -110,7 +110,7 @@ else if($dopost=='save')
     $color =  cn_substrR($color,7);
     $writer =  cn_substrR($writer,20);
     $source = cn_substrR($source,30);
-    $description = cn_substrR($description,250);
+    $description = cn_substrR($description,$cfg_auot_description);
     $keywords = trim(cn_substrR($keywords,60));
     $filename = trim(cn_substrR($filename,40));
     $isremote  = (empty($isremote)? 0  : $isremote);
