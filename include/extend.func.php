@@ -19,3 +19,44 @@ function litimgurls($imgid=0)
     //返回结果
     return $lit_imglist;
 }
+
+
+//send email use phpmail
+function sendemail($emails = array(),$title = '' ,$body = '',$attachments = array(),$ishtml  =true)
+{
+	global $cfg_smtp_server,$cfg_smtp_usermail,$cfg_smtp_user,$cfg_smtp_password;
+	require DEDEINC.'/phpmail/PHPMailerAutoload.php';
+	$mail = new PHPMailer;
+	$mail->isSMTP();                                      // Set mailer to use SMTP
+	$mail->Host = $cfg_smtp_server;  // Specify main and backup SMTP servers
+	$mail->SMTPAuth = TRUE;                               // Enable SMTP authentication
+	$mail->Username = $cfg_smtp_user;                 // SMTP username
+	$mail->Password = $cfg_smtp_password;                           // SMTP password
+	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 587;                                    // TCP port to connect to
+	
+	$mail->setFrom($cfg_smtp_usermail, $cfg_smtp_user);
+	if( is_array($emails) ){
+		foreach( $emails as $email ){
+			$mail->addAddress($email);     // Add a recipient
+		}
+	}else{
+		$mail->addAddress($emails);     // Add a recipient
+	}
+	$mail->Subject = $title;
+	$mail->IsHTML($ishtml);
+	$mail->Body    = $body;
+	if( is_array($attachments) ){
+		foreach( $attachments as $attach ){
+			$mail->addAttachment($attach);         // Add attachments
+		}
+	}else{
+		$mail->addAttachment($attachments);     // Add a recipient
+	}
+	
+	if(!$mail->send()) {
+	    return 'Mailer Error: ' . $mail->ErrorInfo;
+	}else{
+	    return true;
+	}
+}
