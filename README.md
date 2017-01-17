@@ -10,3 +10,4 @@ DedeCMS后台去广告中性版。
 - 默认数据库加了联系我们、关于我们两个信息。
 - 加了两个默认分类。
 - 把原有的发送邮件改成用phpmail发送邮件，并测试成功
+- 加入phpexcel导入导出方法到/include/extend.func.php
