@@ -48,14 +48,6 @@ document.write("午夜好，");
   <p class="success" style="margin-top: 25px;">注册成功!<?php echo $uname=empty($uname)? '' : '您的用户名：<font color="#ff6600">'.$uname.'</font>,';?>您已成为本站的正式会员!<br /><?php if($cfg_mb_spacesta=="-10") echo '<font color="#ff6600">由于系统开启了邮件审核机制，因此你的帐号需要审核后才能发信息!</font><br />';?>
   <font color="#ff6600"><span id="loadtime" style=" font-weight:bold">10</span></font>秒钟后自动转到会员中心！<br />
 <a href="<?php echo $cfg_cmspath; ?>/member/">马上进入会员中心</a>&nbsp;&nbsp;<a href="<?php echo $cfg_cmspath; ?>/">返回网站首页</a></p></div>
-<script language="javascript" type="text/javascript">
-	window.onload=function (){
-		setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
-	}
-</script>
-<div class="footer bor">
-  <div class="fLeft mL10">Copyright &copy; 2004-2011 DEDECMS. 织梦科技 版权所有</div>
-  <div class="fRight mR10" id="time"></div>
-</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
 </body>
 </html>
