@@ -195,14 +195,6 @@ document.write("午夜好，");
   </div>
   <br class="clear"/>
 </div>
-<script language="javascript" type="text/javascript">
-	window.onload=function (){
-		setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
-	}
-</script>
-<div class="footer bor">
-  <div class="fLeft mL10">Copyright &copy;    版权所有</div>
-  <div class="fRight mR10" id="time">  </div>
-</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
 </body>
 </html>
